@@ -13,7 +13,7 @@ const weatherInfo = (location, callback) => {
     else{
       callback(undefined, 
         {
-          forecast: `${current.weather_descriptions[0]}. It is currently ${current.temperature} degrees outside. It feels like ${current.feelslike} degrees.`,
+          forecast: `${current.weather_descriptions[0]}. It is currently ${current.temperature} degrees outside. It feels like ${current.feelslike} degrees. The pressure currently is ${current.pressure} mbar.`,
           location: `${location.name}, ${location.region}, ${location.country}`
         })
     }
